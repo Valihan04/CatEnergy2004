@@ -1,0 +1,42 @@
+.rules {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__box {
+        width: 230px;
+
+        padding-bottom: 57px;
+        position: relative;
+    }
+
+    &__title {
+        @include font (400, 60px, $text-black);
+        margin-top: 71px;
+        margin-bottom: 71px;
+    }
+
+    &__description {
+        @include font (400, 20px, $text-dark)
+    }
+
+    &__img {
+        margin-bottom: 30px;
+    }
+
+    &__number {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        z-index: -1;
+    }
+
+    &__bottom {
+        @include font (400, 60px, $text-black);
+        margin-top: 70px;
+        margin-bottom: 70px;
+
+    }
+}

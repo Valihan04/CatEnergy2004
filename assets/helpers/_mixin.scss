@@ -1,0 +1,6 @@
+@mixin font ($valihan, $nura, $baha) {
+    font-family: 'Oswald';
+    font-weight: $valihan;
+    font-size: $nura;
+    color: $baha;
+}

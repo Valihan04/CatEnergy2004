@@ -1,0 +1,41 @@
+.catalog {
+    margin-top: 82px;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    &__box {
+        max-width: 480px;
+        padding-left: 52px;
+        padding-right: 52px;
+        padding-top: 47px;
+        padding-bottom: 59px;
+        background: $bg-grey;
+    }
+    &__text {
+        @include font (400, 36px, $text-black);
+        margin-left: 60px;
+    }
+
+    &__description {
+        @include font (400, 16px, $text-black);
+        margin-top: 39px;
+        margin-bottom: 27px;
+    }
+
+    &__slim {
+        @include font (400, 20px, $text-black)
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+    }
+    &__avatar {
+        position: relative;
+    }
+    &__cat {
+        position: absolute;
+    }
+}

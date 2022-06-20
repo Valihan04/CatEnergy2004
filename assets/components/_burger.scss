@@ -1,0 +1,45 @@
+.burger {
+    display: none;
+    &__menu {
+        width: 110px;
+        height: 100px;
+        padding: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__line {
+        background: $bg-black;
+        height: 6px;
+    }
+
+    .header__item {
+        margin-top: 20px;
+        text-align: center;
+    }
+    &__list {
+        
+        position: absolute;
+        right: -10000000px;
+        background: $text-white;
+        transition: 1s;
+    }
+    &__close {
+        display: none;
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    &.active &__list {
+        right: 0;
+    }
+    &.active &__close {
+        display: block;
+    }
+
+    &.active &__line {
+        display: none;
+    }
+}

@@ -1,0 +1,186 @@
+@media screen and (max-width: 768px) {
+    .header {
+        .container {
+            max-width: 708px;
+            margin: 0 auto;
+        }
+        
+        &__list {
+            margin-left: 150px;
+        }
+        &__link {
+            @include font (400, 20px, $text-black);
+            
+        }
+        &__item {
+            margin-right: 60px;
+            position: relative;
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background-color: $text-black;
+                transition: 0.3s;
+            }
+    
+            &::before {
+                top: -2px;
+            }
+    
+            &::after {
+                right: 0;
+                bottom: -2px;
+            }
+    
+            &:hover {
+    
+                &::before,
+                &::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+    .hero {
+        .container {
+            max-width: 708px;
+            margin: 0 auto;
+        }
+        
+        &__bg {
+            display: none;
+        }
+        &__img {
+            z-index: -9;
+            margin-top: 300px;
+            
+        }
+        &__left {
+           
+            margin-left: 100px;
+        }
+        
+    }
+    .catalog {
+        margin-top: 200px;
+        .container {
+            max-width: 708px;
+            margin: 0 auto;
+        }
+        &__content {
+            display: block;
+            max-width: 708px;
+        }
+        &__box {
+            margin-left: 190px;
+            margin-top: 30px;
+            max-width: 708px;
+        }
+    }
+    .rules {
+        .container {
+            max-width: 708px;
+            margin: 0 auto;
+        }
+        &__content {
+            margin-left: 200px;
+        }
+        &__box {
+            width: 200px;
+        }
+    }
+    .example {
+        background: none;
+        margin-left: 230px;
+        .container {
+            max-width: 708px;
+            margin: 0 auto;
+            
+        }
+        &__content {
+            display: block;
+            
+        }
+        &__flex {
+            display: flex;
+            align-items: center;
+        }
+        &__description {
+            @include font (400, 20px, $text-dark);
+            margin-left: 50px;
+        }
+        &__right {
+            background: $bg-grey;
+        }
+        &__advice {
+            background: none;
+        }
+        
+    }
+    .map {
+        margin-left: 230px;
+    }
+    .footer {
+        margin-left: 230px;
+        &__content {
+            margin: 0;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        &__htmllogo {
+            margin-top: 20px;
+            margin-left: 70px;
+        }
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .header {
+        margin-left: 90px;
+        &__list {
+            display: none;
+        }
+        &__content {
+            margin-left: 200px;
+        }
+        
+    }
+    .burger {
+        display: block;
+    }
+    .catalog {
+        .container {
+            width: 1000px;
+        }
+        .__box {
+            width: 800px;
+        }
+    }
+    .rules {
+        .container {
+            width: 1000px;
+        }
+    }
+    .example {
+        margin-left:150px;
+        .container {
+            width: 1000px;
+        }
+    }
+    .map {
+        margin-left:0;
+        .container {
+            width: 1000px;
+        }
+    }
+    .footer {
+        margin-left:0;
+        background: none;
+        .container {
+            width: 1000px;
+        }
+    }
+}

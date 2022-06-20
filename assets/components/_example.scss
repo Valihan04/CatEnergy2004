@@ -1,0 +1,54 @@
+.example {
+    background: $bg-grey;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__description {
+        max-width: 436px;
+        @include font (400, 16px, $text-dark);
+    }
+
+    &__kilogram {
+        @include font (400, 30px, $text-black);
+    }
+
+    &__advice {
+        @include font (400, 16px, $text-dark);
+        position: absolute;
+        bottom: -10px;
+        background: $bg-grey;
+        padding: 4px;
+        text-align: center;
+
+        
+    }
+
+    &__details {
+        @include font (400, 20px, $text-black);
+        margin-right: 50px;
+    }
+
+    &__center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 162px;
+        border: 1px solid #CDCDCD;
+        border-radius: 3px;
+        position: relative;
+        height: 72px;
+        margin-right: 42px;
+    }
+    &__big {
+        display: flex;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    
+    &__top {
+        margin-top: 200px;
+    }
+   
+} 
